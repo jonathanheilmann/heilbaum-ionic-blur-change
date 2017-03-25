@@ -1,0 +1,110 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      blurChange directive
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>heilbaum-ionic-blur-change</h2>
+  <p>
+    <code>heilbaum-ionic-blur-change</code> provides an Ionic 2 directive to detect changes on input blur and emits an event.
+  </p>
+
+  <h3>Example</h3>
+  <ul>
+    <li>Fill or modify input:<br>-> blurChange will be emitted.</li>
+    <li>Focus input and blur without doing changes:<br>-> blurChange will <b>not</b> be emitted.</li>
+    <li>Focus input, do some changes, discard changes and blur:<br>-> blurChange will <b>not</b> be emitted.</li>
+  </ul>
+  <ion-list>
+    <ion-item>
+      <ion-input id="someInput"
+                 name="someInput"
+                 placeholder="Some input"
+                 type="text"
+                 value="Some input"
+                 (blur)="onBlur('someInput')"
+                 (blurChange)="onBlurChange($event, 'someInput')"
+                 (focus)="onFocus('someInput')">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <p color="secondary">{{ someInputMessage }}</p>
+    </ion-item>
+
+    <ion-item>
+      <ion-input id="anotherInput"
+                 name="anotherInput"
+                 placeholder="Another (empty) input"
+                 type="text"
+                 value=""
+                 (blur)="onBlur('anotherInput')"
+                 (blurChange)="onBlurChange($event, 'anotherInput')"
+                 (focus)="onFocus('anotherInput')">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <p color="secondary">{{ anotherInputMessage }}</p>
+    </ion-item>
+  </ion-list>
+
+  <h2>Installation</h2>
+  <ol>
+    <li>
+      Install via npm<br>
+      <pre class="code"><code>npm install heilbaum-ionic-blur-change --save</code></pre>
+    </li>
+    <li>
+      Add <code>BlurChangeModule</code> to <code>src/app/app.modules.ts</code><br>
+      <pre class="code"><code>{{ code.ngModule }}</code></pre>
+    </li>
+  </ol>
+
+  <h2>Usage</h2>
+  <p>
+    Add <code>(blurChange)</code> attribute to <code>ion-input</code> component assigning a method to be called on
+    blurChange.<br>
+    <code>(blurChange)</code> passes an object <code>$event</code> of type <code>BlurChangeEvent</code> containing properties
+    <code>oldValue</code> and <code>newValue</code>.
+  </p>
+  <p>Example:</p>
+  <pre class="code"><code>{{ code.example }}</code></pre>
+
+  <h2>Contribute</h2>
+  <p>
+    Having trouble, found a bug or got some improvements?<br>
+    You are welcome to create an issue on
+    <a href="https://github.com/jonathanheilmann/heilbaum-ionic-blur-change"
+       title="Open project on GitHub"
+       target="_blank">GitHub</a>
+    or submit a pull-request.
+  </p>
+
+  <h2>License</h2>
+  <pre>
+MIT License
+
+Copyright (c) 2017 HeilBaum (Carsten Baumhögger & Jonathan Heilmann)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+  </pre>
+
+</ion-content>
