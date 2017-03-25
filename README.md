@@ -1,12 +1,12 @@
-# heilbaum-ionic-blur-change
-`heilbaum-ionic-blur-change` provides an Ionic 2 directive to detect changes on input blur and emits an event.
+# @heilbaum/heilbaum-ionic-blur-change
+`@heilbaum/heilbaum-ionic-blur-change` provides an Ionic 2 directive to detect changes on input blur and emits an event.
 
 ## Example
 See [demo.heilbaum.de/heilbaum-ionic-blur-change/](https://demo.heilbaum.de/heilbaum-ionic-blur-change/)
 
 ## Installation
 1. Install via npm
-    npm install heilbaum-ionic-blur-change --save
+    npm install @heilbaum/heilbaum-ionic-blur-change --save
 2. Add `BlurChangeModule` to `src/app/app.modules.ts`
     ```typescript
     @NgModule({

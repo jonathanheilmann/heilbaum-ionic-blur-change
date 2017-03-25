@@ -5,7 +5,7 @@ import { HomePage } from '../pages/home/home';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { BlurChangeModule } from "heilbaum-ionic-blur-change";
+import { BlurChangeModule } from "@heilbaum/heilbaum-ionic-blur-change";
 
 @NgModule({
   declarations: [

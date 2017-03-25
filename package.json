@@ -1,5 +1,5 @@
 {
-  "name": "heilbaum-ionic-blur-change",
+  "name": "@heilbaum/heilbaum-ionic-blur-change",
   "version": "0.1.0",
   "description": "Ionic 2 directive to detect changes on input blur and emits an event",
   "main": "./dist/index.js",
@@ -7,7 +7,7 @@
   "scripts": {
     "ngc": "ngc",
     "build": "rm -rf aot dist && npm run ngc",
-    "publishPackage": "npm run build && npm publish",
+    "publishPackage": "npm run build && npm publish --acces public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,8 +29,7 @@
     "url": "https://github.com/jonathanheilmann/heilbaum-ionic-blur-change/issues"
   },
   "homepage": "https://github.com/jonathanheilmann/heilbaum-ionic-blur-change#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@angular/common": "2.4.8",
     "@angular/compiler": "2.4.8",
@@ -46,5 +45,8 @@
     "rxjs": "5.0.1",
     "typescript": "2.0.10",
     "zone.js": "0.7.2"
+  },
+  "directories": {
+    "example": "example"
   }
 }

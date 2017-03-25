@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BlurChangeEvent } from "heilbaum-ionic-blur-change";
+import { BlurChangeEvent } from "@heilbaum/heilbaum-ionic-blur-change";
 
 @Component({
   selector: 'page-home',

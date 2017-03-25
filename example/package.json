@@ -23,7 +23,7 @@
     "@ionic-native/splash-screen": "3.1.0",
     "@ionic-native/status-bar": "3.1.0",
     "@ionic/storage": "2.0.0",
-    "heilbaum-ionic-blur-change": "file:../",
+    "@heilbaum/heilbaum-ionic-blur-change": "file:../",
     "ionic-angular": "2.3.0",
     "ionicons": "3.0.0",
     "rxjs": "5.0.1",
@@ -31,8 +31,8 @@
     "zone.js": "0.7.2"
   },
   "devDependencies": {
-    "@ionic/app-scripts": "^1.2.0",
-    "typescript": "2.2.1"
+    "@ionic/app-scripts": "1.1.4",
+    "typescript": "2.0.9"
   },
   "cordovaPlugins": [
     "cordova-plugin-whitelist",
