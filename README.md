@@ -5,8 +5,8 @@
 See [demo.heilbaum.de/heilbaum-ionic-blur-change/](https://demo.heilbaum.de/heilbaum-ionic-blur-change/)
 
 ## Installation
-1. Install via npm
-    npm install @heilbaum/heilbaum-ionic-blur-change --save
+1. Install via npm: 
+    `npm install @heilbaum/heilbaum-ionic-blur-change --save`
 2. Add `BlurChangeModule` to `src/app/app.modules.ts`
     ```typescript
     @NgModule({
